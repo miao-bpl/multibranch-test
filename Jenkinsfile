@@ -22,6 +22,15 @@ pipeline {
 			'''
 		    }
 		}
+	
+		stage ('after adding github app') {
+		   steps {
+			sh '''
+			    echo "after adding github app"
+			'''
+		   }
+		}
+
 	}
 
 }
